@@ -1,0 +1,148 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:#000;
+  font:14px 'Baskerville Old Face', 'HY견명조', sans-serif;
+  line-height:1;
+  color:#787878;
+  width:100%;  height:100vh;
+  min-width:320px;
+}
+input, textarea, button {
+  font:14px 'Noto Sans KR', sans-serif;
+  color:#787878;
+}
+h1, h2, h3, h4, h5, h6, strong {
+  font-size:inherit;
+  font-weight:normal;
+}
+ul, li {
+  list-style:none;
+}
+img, fieldset {
+  border:none;
+  vertical-align:top;
+}
+em, i, address {
+  font-style:normal;
+}
+a {
+  text-decoration:none;
+  color:#787878;
+}
+input::placeholder,
+textarea::placeholder {
+  color:#989898;
+  font-weight:300;
+  font-size:12px;
+}
+.clear:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.hide {
+  display:block;
+  width:0;
+  height:0;
+  font-size:1px;
+  overflow:hidden;
+}
+.inner {
+  width:1200px;
+  margin:0 auto;
+}
+
+
+
+#fullpage {
+  margin:0 auto;
+}
+section {
+  padding:0 100px;
+  width:100%;  height:100%;
+  position: relative;
+  font-size:6vw;
+  color:whitesmoke;
+  text-shadow:0 0 16px whitesmoke;
+}
+section:before {
+  content:'';
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.23);
+}
+section span {
+  position: absolute;
+  z-index: 100;
+}
+.wine {
+  background:url(../images/img01.png) no-repeat 50% 50% / cover;
+}
+.whisky {
+  background:url(../images/img02.png) no-repeat 50% 50% / cover;
+}
+.beer {
+  background:url(../images/img03.png) no-repeat 50% 50% / cover;
+}
+.mgl {
+  background:url(../images/img04.png) no-repeat 50% 50% / cover;
+}
+.sake {
+  background:url(../images/img05.png) no-repeat 50% 50% / cover;
+}
+.footer {
+  background:#262626;
+  color:#fff;
+}
+
+
+
+
+
+
+.fp-auto-height.fp-section, 
+.fp-auto-height .fp-slide, 
+.fp-auto-height .fp-tableCell {
+  height:300px !important;
+}
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+  width:8px;
+  height:8px;
+  border:1px solid #fff;
+  margin:0;
+  transform:translate(-50%, -50%);
+  background:#666;
+}
+
+
+/* 선택 nav */
+/* #fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+  background:#fff;
+} */
+
+/* text */
+/* #fp-nav ul li .fp-tooltip {
+  color:#262626;
+} */
+
+/* hover */
+/* #fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{
+  width: 10px;
+  height: 10px;
+  margin:0;
+} */
