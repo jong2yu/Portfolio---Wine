@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/main.css" rel="stylesheet">    
+  <link href="css/fullpage_plugin.css" rel="stylesheet">    
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/fullpage.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      new fullpage('#fullpage', {
+        navigation: true,
+        navigationPosition: 'right',
+        showActiveTooltip: true,
+        navigationTooltips: ['Wine', 'Whisky', 'Beer', '막걸리', 'Sake', 'Footer'],
+        scrollBar:true,
+        afterLoad: function(){
+
+          if($('body').hasClass('fp-viewing-2')) {
+            $('#fp-nav').addClass('on');
+          } else {
+            $('#fp-nav').removeClass('on');
+          }
+        }
+      });
+
+      AOS.init({
+        duration:2500,
+        once:true,
+        once: false
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <div id="logo"><a href="#">bar</a></div>
+
+  <header id="menu">
+    <ul>
+      <li target="#wine"><a href="#wine">Wine</a></li>
+      <li target="#whisky"><a href="#whisky">Whisky</a></li>
+      <li target="#beer"><a href="#beer">Beer</a></li>
+      <li target="#mgl"><a href="#mgl">막걸리</a></li>
+      <li target="#sake"><a href="#sake">Sake</a></li>
+    </ul>
+  </header>
+
+
+
+  <main id="fullpage">
+    <section class="section wine" id="wine">
+      <div class="wrap">
+        <div class="text">
+          <a href="#" data-aos="fade-down">Wine</a>
+          <p data-aos="fade-down" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <ul class="list">
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-down" data-aos-delay="400">
+                  <img src="images/wine01.png" alt="Wine">
+                </div>
+              </div>
+              <p data-aos="fade-down" data-aos-delay="400">디아블로 데블스 브뤼</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-down" data-aos-delay="700">
+                  <img src="images/wine02.png" alt="Wine">
+                </div>
+              </div>
+              <p data-aos="fade-down" data-aos-delay="700">크루즈 토니 포트</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-down" data-aos-delay="1000">
+                  <img src="images/wine03.png" alt="Wine">
+                </div>
+              </div>
+              <p data-aos="fade-down" data-aos-delay="1000">우나니메</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="section whisky" id="whisky">
+      <div class="wrap">
+        <div class="text">
+          <a href="#" data-aos="fade-up">Whisky</a>
+          <p data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <ul class="list">
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-up" data-aos-delay="400">
+                  <img src="images/whisky01.png" alt="Whisky">
+                </div>
+              </div>
+              <p data-aos="fade-up" data-aos-delay="400">잭 다니엘</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-up" data-aos-delay="700">
+                  <img src="images/whisky02.png" alt="Whisky">
+                </div>
+              </div>
+              <p data-aos="fade-up" data-aos-delay="700">발렌타인</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-up" data-aos-delay="1000">
+                  <img src="images/whisky03.png" alt="Whisky">
+                </div>
+              </div>
+              <p data-aos="fade-up" data-aos-delay="1000">조니 워커</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="section beer" id="beer">
+      <div class="wrap">
+        <div class="text">
+          <a href="#" data-aos="fade-right">Beer</a>
+          <p data-aos="fade-right" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <ul class="list">
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-right" data-aos-delay="400">
+                  <img src="images/beer01.png" alt="Beer">
+                </div>
+              </div>
+              <p data-aos="fade-right" data-aos-delay="400">카스</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-right" data-aos-delay="700">
+                  <img src="images/beer02.png" alt="Beer">
+                </div>
+              </div>
+              <p data-aos="fade-right" data-aos-delay="700">테라</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-right" data-aos-delay="1000">
+                  <img src="images/beer03.png" alt="Beer">
+                </div>
+              </div>
+              <p data-aos="fade-right" data-aos-delay="1000">클라우드</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="section mgl" id="mgl">
+      <div class="wrap">
+        <div class="text">
+          <a href="#" data-aos="fade-zoom-in">막걸리</a>
+          <p data-aos="fade-zoom-in" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <ul class="list">
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-zoom-in" data-aos-delay="400">
+                  <img src="images/mgl01.png" alt="막걸리">
+                </div>
+              </div>
+              <p data-aos="fade-zoom-in" data-aos-delay="400">악양생막걸리</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-zoom-in" data-aos-delay="700">
+                  <img src="images/mgl02.png" alt="막걸리">
+                </div>
+              </div>
+              <p data-aos="fade-zoom-in" data-aos-delay="700">스파클링 막걸리</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-zoom-in" data-aos-delay="1000">
+                  <img src="images/mgl03.png" alt="막걸리">
+                </div>
+              </div>
+              <p data-aos="fade-zoom-in" data-aos-delay="1000">생막걸리</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="section sake" id="sake">
+      <div class="wrap">
+        <div class="text">
+          <a href="#" data-aos="fade-left" data-aos-anchor-placement="top-bottom">Sake</a>
+          <p data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <ul class="list">
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+                  <img src="images/sake01.png" alt="Sake">
+                </div>
+              </div>
+              <p data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="400">지콘</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="700">
+                  <img src="images/sake02.png" alt="Sake">
+                </div>
+              </div>
+              <p data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="700">사유리</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="ho-ver" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="1000">
+                  <img src="images/sake03.png" alt="Sake">
+                </div>
+              </div>
+              <p data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="1000">아츠칸</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="section footer fp-auto-height">
+      <footer id="footer">
+        <div class="wrap">
+          <div class="left">
+            <a href="#" class="logo">bar</a>
+          </div>
+          <div class="right">
+            <div class="wrap">
+              <div class="info">
+                <strong>(주) 와인나라 제일와인셀러점</strong> <span>사업장 소재지: 서울특별시 중구 퇴계로46길 23, 1층(묵정동)</span><br>
+                <pre><strong>사업자 등록번호</strong> <span>398-85-01790</span> &nbsp; <strong>대표자</strong> <span>최종규</span><br></pre>
+                <strong>통신판매신고번호</strong> <span>제2021-서울중구-2323호 (와인나라 전점 별도 신고)</span><br>
+                <strong>본사소재지</strong> <span>경기도 평택시 안중읍 서해로 1279, 지하1층</span><br>
+                <strong>고객센터</strong> <span>080-732-0101 (평일 09:00–17:00 / 점심시간 12:00-13:00 / 주말 및 공휴일 휴무)</span><br>
+                <strong>개인정보처리책임자</strong> <span>이소민</span><br>
+              </div>
+              <div class="more">
+                <a href="#">회사소개</a><br>
+                <a href="#">브랜드 소개</a><br>
+                <a href="#">이용약관</a><br>
+                <a href="#">개인정보처리방침</a><br>
+                <a href="#">고객센터</a><br>
+              </div>
+              <p><pre>Copyright &copy WINENARA All Rights Reserved.</pre></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
