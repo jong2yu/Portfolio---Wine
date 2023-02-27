@@ -1,4 +1,4 @@
-/*!
+/*
  * fullPage 3.1.2
  * https://github.com/alvarotrigo/fullPage.js
  *
@@ -96,18 +96,7 @@ html.fp-enabled,
   transition: none !important;
 }
 
-
-
-
-
-
-
-
-
-
-
 #fp-nav {
-  /* display:none; */
   position: fixed;
   z-index: 10;
   top: 50%;
@@ -151,29 +140,11 @@ html.fp-enabled,
   height: 13px;
   margin: 20px 0;
   position:relative;
-  /* border:1px solid red; */
 }
 .fp-slidesNav ul li {
   display: inline-block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Nav Dot */
-/* #fp-nav ul {
-  background:yellow;
-  border:1px solid blue;
-} */
 #fp-nav ul li a,
 .fp-slidesNav ul li a {
   display: block;
@@ -186,33 +157,6 @@ html.fp-enabled,
   /* border:1px solid yellow; */
 }
 
-
-
-
-
-
-/* 
-**********************************************
-**********************************************
-**********************************************
-**********************************************
-**********************************************
-*/
-/* 
-**********************************************
-**********************************************
-**********************************************
-**********************************************
-**********************************************
-*/
-/* 
-**********************************************
-**********************************************
-**********************************************
-**********************************************
-**********************************************
-*/
-
 /* 선택 nav *********************** */
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
@@ -220,7 +164,6 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a.active span{
   height: 12px;
   width: 12px;
-  /* margin: -6px 0 0 -6px; */
   border-radius: 100%;
   background:#fff;
   box-shadow: 0 0 10px black;
@@ -247,7 +190,6 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a span{
   width: 10px;
   height: 10px;
-  /* margin: -5px 0px 0px -5px; */
   background:white;
 }
 
@@ -259,7 +201,6 @@ html.fp-enabled,
   color: #fff;
   text-shadow: 0 0 10px black;
   font-size: 30px;
-  /* font-family: arial, helvetica, sans-serif; */
   white-space: nowrap;
   max-width: 220px;
   overflow: hidden;
@@ -268,39 +209,6 @@ html.fp-enabled,
   width: 0;
   cursor: pointer;
 }
-
-/* 
-**********************************************
-**********************************************
-**********************************************
-**********************************************
-**********************************************
-*/
-/* 
-**********************************************
-**********************************************
-**********************************************
-**********************************************
-**********************************************
-*/
-/* 
-**********************************************
-**********************************************
-**********************************************
-**********************************************
-**********************************************
-*/
-
-
-
-
-
-
-
-
-
-
-
 
 #fp-nav ul li:hover .fp-tooltip,
 #fp-nav.fp-show-active a.active + .fp-tooltip {
@@ -315,17 +223,7 @@ html.fp-enabled,
 #fp-nav ul li .fp-tooltip.fp-left {
   left: 20px;
 }
-/* .fp-auto-height.fp-section,
-.fp-auto-height .fp-slide,
-.fp-auto-height .fp-tableCell{
-  height: auto !important;
-}
 
-.fp-responsive .fp-auto-height-responsive.fp-section,
-.fp-responsive .fp-auto-height-responsive .fp-slide,
-.fp-responsive .fp-auto-height-responsive .fp-tableCell {
-  height: auto !important;
-} */
 
 /*Only display content to screen readers*/
 .fp-sr-only{

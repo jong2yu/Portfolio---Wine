@@ -1,44 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="css/main.css" rel="stylesheet">    
-  <link href="css/fullpage_plugin.css" rel="stylesheet">    
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+  <title>Wine</title>
+
+  <!-- JQuery -->
   <script src="js/jquery-3.6.0.min.js"></script>
+
+  <!-- Fullpage -->
+  <link href="css/fullpage_plugin.css" rel="stylesheet">
   <script src="js/fullpage.min.js"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <script>
-    $(document).ready(function(){
-      new fullpage('#fullpage', {
-        navigation: true,
-        navigationPosition: 'right',
-        showActiveTooltip: true,
-        navigationTooltips: ['Wine', 'Whisky', 'Beer', '막걸리', 'Sake', 'Footer'],
-        scrollBar:true,
-        afterLoad: function(){
-
-          if($('body').hasClass('fp-viewing-2')) {
-            $('#fp-nav').addClass('on');
-          } else {
-            $('#fp-nav').removeClass('on');
-          }
-        }
-      });
-
-      AOS.init({
-        duration:2500,
-        once:true,
-        once: false
-      });
-    });
-  </script>
+  <link href="css/main.css" rel="stylesheet">
+  <script src="./js/script.js"></script>
 
 </head>
+
 <body>
   <div id="logo"><a href="#">bar</a></div>
 
@@ -231,7 +215,8 @@
       <div class="wrap">
         <div class="text">
           <a href="#" data-aos="fade-left" data-aos-anchor-placement="top-bottom">Sake</a>
-          <p data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur.</p>
+          <p data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="400">Lorem ipsum dolor sit amet
+            consectetur.</p>
         </div>
         <ul class="list">
           <li>
@@ -293,7 +278,9 @@
                 <a href="#">개인정보처리방침</a><br>
                 <a href="#">고객센터</a><br>
               </div>
-              <p><pre>Copyright &copy WINENARA All Rights Reserved.</pre></p>
+              <p>
+                <pre>Copyright &copy WINENARA All Rights Reserved.</pre>
+              </p>
             </div>
           </div>
         </div>
@@ -301,4 +288,5 @@
     </section>
   </main>
 </body>
+
 </html>

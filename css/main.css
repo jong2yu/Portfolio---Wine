@@ -7,6 +7,7 @@
   margin: 0; padding: 0;
   box-sizing: border-box;
 }
+html { overflow-x: hidden !important; }
 body {
   background:#000;
   font:14px 'Baskerville Old Face', 'HY견명조', sans-serif;
@@ -30,10 +31,6 @@ a { text-decoration:none; }
   overflow:hidden;
 }
 
-
-
-
-
 /* 헤더 */
 /* 로고 */
 #logo a {
@@ -44,8 +41,6 @@ a { text-decoration:none; }
   left:1vw; top:2vh;
   z-index: 10;
 }
-
-
 
 /* 메뉴 */
 #menu {
@@ -67,26 +62,13 @@ a { text-decoration:none; }
   padding-bottom:3px;
 }
 
-
-
-
-
 /* 페이지 */
-#wine {
-  background:url(../images/img01.png) no-repeat 50% 50% / cover;
-}
-#whisky {
-  background:url(../images/img02.png) no-repeat 50% 50% / cover;
-}
-#beer {
-  background:url(../images/img03.png) no-repeat 50% 50% / cover;
-}
-#mgl {
-  background:url(../images/img04.png) no-repeat 50% 50% / cover;
-}
-#sake {
-  background:url(../images/img05.png) no-repeat 50% 50% / cover;
-}
+#wine { background:url(../images/img01.png) no-repeat 50% 50% / cover; }
+#whisky { background:url(../images/img02.png) no-repeat 50% 50% / cover; }
+#beer { background:url(../images/img03.png) no-repeat 50% 50% / cover; }
+#mgl { background:url(../images/img04.png) no-repeat 50% 50% / cover; }
+#sake { background:url(../images/img05.png) no-repeat 50% 50% / cover; }
+
 section {
   padding:0 100px;
   width:100%;  height:100%;
@@ -99,10 +81,6 @@ section:before {
   width:100%; height:100%;
   background:rgba(0,0,0,.23);
 }
-
-
-
-
 
 /* 텍스트 */
 section .wrap {
@@ -160,8 +138,6 @@ section .wrap .text p {
   text-shadow:0 0 10px black;
 }
 
-
-
 /* 리스트 */
 section .wrap .list {
   display:flex;
@@ -204,10 +180,6 @@ section .wrap .list li a:hover .box .ho-ver img {
   transform:scale(1.2, 1.2);
 }
 
-
-
-
-
 /* 푸터 */
 .footer {
   position:relative;
@@ -237,19 +209,13 @@ footer .wrap .right .wrap {
   font-family: 'HYGraphic', sans-serif;
   color:whitesmoke;
   height:100%;
-  /* background:purple; */
   align-content: space-around;
 }
 footer .wrap .right .wrap .info {
-  /* border:1px solid red; */
   width:100%;
   line-height: 15px;
 }
-/* footer .wrap .right .wrap .info strong {
-  
-} */
 footer .wrap .right .wrap .more {
-  /* border:1px solid blue; */
   width:100%;
   margin:15px 0;
   display:flex;
@@ -277,59 +243,8 @@ footer .wrap .right .wrap p {
   opacity: .6;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .fp-auto-height.fp-section, 
 .fp-auto-height .fp-slide, 
 .fp-auto-height .fp-tableCell {
   height:300px !important;
 }
-/* #fp-nav ul li a span, 
-.fp-slidesNav ul li a span {
-  width:8px;
-  height:8px;
-  border:1px solid #fff;
-  margin:0;
-  transform:translate(-50%, -50%);
-  background:#666;
-} */
-
-
-/* 선택 nav */
-/* #fp-nav ul li a.active span, 
-.fp-slidesNav ul li a.active span, 
-#fp-nav ul li:hover a.active span, 
-.fp-slidesNav ul li:hover a.active span {
-  background:#fff;
-} */
-
-/* text */
-/* #fp-nav ul li .fp-tooltip {
-  color:#262626;
-} */
-
-/* hover */
-/* #fp-nav ul li:hover a span,
-.fp-slidesNav ul li:hover a span{
-  width: 10px;
-  height: 10px;
-  margin:0;
-} */
